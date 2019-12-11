@@ -4,6 +4,7 @@
 	<title>hai</title>
 	<style type="text/css">
 		body{
+			overflow-y: hidden;
 			margin:0;
 			padding: 0;
 			font-family: verdana;
@@ -13,7 +14,7 @@
 			font-family: arial;
 			background-color: rgb(255,255,255,0.7);
 			width: 300px;
-			margin: 200px auto;
+			margin: 180px auto;
 			padding: 30px;
 			text-align: right;
 			color: #2D2D2D;
@@ -23,15 +24,20 @@
 		input{
 			margin: 10px;
 		}
-		input.submit{
+		input.login{
 			background-color: #0096FF;
+			color: #E7E7E7;
 			font-family: verdana;
 			font-weight: bold;
 			border-radius: 10px;
 			padding: 5px 10px;
 			margin: 30px 10px auto 0px;
-			text-transform: uppercase
-
+			text-transform: uppercase;
+			transition: .2s;
+		}
+		input.login:hover{
+			background-color: #93A4B0;
+			color: #CDCDCD;
 		}
 		p{
 			text-align:center;
@@ -47,11 +53,11 @@
 	</style>
 </head>
 <body>
-	<form action="https://hardifal.com">
+	<form action="#">
 		<p>YUDI GUNTARA</p>
-		Username  <input type="text" name="username" placeholder="nama pengguna">
-		Password  <input type="text" name="password" placeholder="kata sandi">
-		<input class="submit" type="submit" name="submit" value="login">
+		Username  <input type="text" name="username" placeholder="username">
+		Password  <input type="text" name="password" placeholder="password">
+		<input class="login" type="submit" name="submit" value="login">
 	</form>
 </body>
 </html>
